@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person type="Developer">
+	<Id>101</Id>
+	<Name>Sunil</Name>
+	<Age>23</Age>
+	<Contact_no.>1234567</Contact_no.>
+	<address>
+		<city>Delhi Ncr</city>
+		<country>India</country>
+		<state>New Delhi</state>
+	</address>
+</person>

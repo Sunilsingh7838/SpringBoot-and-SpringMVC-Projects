@@ -1,0 +1,10 @@
+{
+	"author": {
+		"authorName": "Alex",
+		"authorEmail": "Alex@gmail.com",
+		"authorPhno": 123456789
+	},
+	"name": "Spring",
+	"id": 101,
+	"price": 300.0
+}
