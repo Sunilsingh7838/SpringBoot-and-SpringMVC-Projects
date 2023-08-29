@@ -1,0 +1,11 @@
+ 
+spring:
+  application:
+    name: YML-Learning
+springboot:
+ messages:
+  welcomeMsg: Welcome to YML config learning.
+  greetMsg: Good Morning!
+  wishMsg: All the best
+  
+ 
