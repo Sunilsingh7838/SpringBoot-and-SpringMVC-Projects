@@ -1,0 +1,6 @@
+in\mvc\rest\BookRestController.class
+in\mvc\RestApi5CrudAppApplication.class
+in\mvc\repo\BookRepository.class
+in\mvc\service\BookService.class
+in\mvc\entity\Book.class
+in\mvc\service\BookServiceImpl.class
