@@ -1,0 +1,51 @@
+@charset "ISO-8859-1";
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+	font-size: 15px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+	border: none;
+
+}
+
+th,
+td {
+	border: 1px solid #ddd;
+	padding: 4px;
+	text-align: left;
+	border-spacing: 0;
+}
+
+th {
+	background-color: rgb(255, 255, 255);
+}
+
+tr:hover {
+	background-color: rgb(218, 218, 218);
+}
+
+.delete-link:hover span,
+.edit-link:hover span {
+	color: blue;
+	cursor: pointer;
+}
+
+.buttonContainer {
+	margin-top: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	font-size: 15px;
+	border-radius: 5px;
+	border-color: black;
+
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="/pages/static/css/updatedetail.css">
+
+	<title>Registration Form</title>
+</head>
+
+<body>
+	<div class="container">
+		<form id="registrationForm">
+			<h2>Registration Form</h2>
+			<table>
+				<tr>
+					<td><label for="firstname">First Name:</label></td>
+					<td><input placeholder="first name" id="firstname" name="firstname" /></td>
+				</tr>
+
+				<tr>
+					<td><label for="lastname">Last Name:</label></td>
+					<td><input placeholder="surname" type="text" id="lastname" name="lastname" /></td>
+				</tr>
+
+				<tr>
+					<td><label for="dob">DoB:</label></td>
+					<td><input placeholder="DD-MM-YYYY" type="date" id="dob" name="dob" /></td>
+				</tr>
+				<tr>
+					<td><label for="gender">Gender:</label></td>
+					<td><label>
+							<input type="radio" name="gender" value="male"> Male
+						</label>
+						<label>
+							<input type="radio" name="gender" value="female"> Female
+						</label>
+						<label>
+							<input type="radio" name="gender" value="other"> Other
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="name">Contact:</label></td>
+					<td><input placeholder="10-digit" type="text" id="contact" name="name" required /></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email:</label></td>
+					<td><input placeholder="someone@gmail.com" type="email" id="email" name="email" required /></td>
+				</tr>
+				<tr>
+					<td><label for="address">Address:</label></td>
+					<td><input placeholder="address" type="text" id="address" name="address" required /></td>
+				</tr>
+				<tr>
+					<td><label for="state">State:</label></td>
+					<td><input placeholder="eg.New Delhi" type="text" id="state" name="state" required /></td>
+				</tr>
+				<tr>
+					<td><label for="pincode">Pincode:</label></td>
+					<td><input placeholder="pincode" type="text" id="pincode" name="pincode" required /></td>
+				</tr>
+				<tr>
+					<td><label for="country">Country:</label></td>
+					<td><input placeholder="eg.India" type="text" id="country" name="country" required /></td>
+				</tr>
+			</table>
+			<div class="button-container">
+				<button id="submitbtn" onclick="buttonClickHandler()" type="button">Save</button>
+				<button id="resetbtn" type="button">Reset</button>
+			</div>
+		</form>
+	</div>
+
+	<div id="popupId" style="display: none; color: forestgreen;">
+		<h1>&#10004; Saved successfully! </h1>
+	</div>
+
+	<div id="validationPopupId" style="display: none; color:red;">
+		<h1>&#10060; Please fill in all the fields.</h1>
+	</div>
+	
+	<div id="validationNameId" style="display: none; color:red;">
+		<h1>&#10060; Please enter valid Name!</h1>
+	</div>
+	<div id="validationStateId" style="display: none; color:red;">
+		<h1>&#10060; Please enter valid State!</h1>
+	</div>
+	<div id="validationCountryId" style="display: none; color:red;">
+		<h1>&#10060; Please enter valid Country!</h1>
+	</div>
+	<div id="validationAddressId" style="display: none; color:red;">
+		<h1>&#10060; Please enter valid Address!</h1>
+	</div>
+	<div id="validationContactId" style="display: none; color:red;">
+		<h1>&#10060; Please enter valid Contact !</h1>
+	</div>
+	<div id="validationPincodeId" style="display: none; color:red;">
+		<h1>&#10060; Please enter valid Pincode !</h1>
+	</div>
+	<div id="validationEmailId" style="display: none; color:red;">
+		<h1>&#10060; Please enter valid Email!</h1>
+	</div>
+	<script src="/pages/static/js/index.js"></script>
+</body>
+
+</html>
