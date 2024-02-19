@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="/pages/static/css/updatedetail.css">
+	<title>Login</title>
+</head>
+
+<body class="body">
+	<div class="login-container">
+		<h2>Login</h2>
+		<form>
+			<label for="username" class="form-label">Email ID:</label>
+			<input type="text" id="emailID" name="username" class="form-input">
+			<span id="userSpanId" style="display: none;">This field is important *</span>
+
+			<label for="password" class="form-label">Password:</label>
+			<input type="password" id="passwordID" name="password" class="form-input">
+			<span id="userPasswordSpanId" style="display: none;">This field is important *</span>
+
+
+			<button type="button" class="form-button" onclick="loginClickHandler()">Login</button>
+		</form>
+		<div id="userNotExistId" style="display: none; color:red;">
+			<h1>&#10060;User not exist Try SignUp.!</h1>
+		</div>
+		<div id="invalidPasswordPopupId" style="display: none; color:red;">
+			<h1>&#10060; Enter Correct Password</h1>
+		</div>
+	</div>
+	<script src="/pages/static/js/index.js"></script>
+</body>
+
+</html>

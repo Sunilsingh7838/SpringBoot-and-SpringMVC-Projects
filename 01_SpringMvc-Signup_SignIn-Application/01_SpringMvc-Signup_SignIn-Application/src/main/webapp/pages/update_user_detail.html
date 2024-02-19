@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>User Detail</title>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	
+<!--	<link rel="stylesheet" href="/pages/static/css/updatedetail.css">-->
+	<style>
+		#updatedPopupId,
+		#serverErrorId {
+			display: none;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 20px;
+			background-color: grey;
+			/* Light background color */
+			border: 1px solid black;
+			/* Subtle border color */
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			/* Shadow for depth */
+
+		}
+	</style>
+</head>
+
+<body>
+	<!--	top: 50%; left: 50%;  transform: translate(-50%, -50%);-->
+	<div style="margin-left: 500px; ">
+
+		<h1 id="fullNameId"></h1>
+		<h4>User: <i><span id="email"></span></i></h4>
+		<p style="color: red;">*Email id Cannot be edited</p>
+
+		<div id="UserData" style="margin-top: 10px; "></div>
+
+		<button type="button" id="updateUserDetail" class="btn btn-outline-primary">Save</button>
+		<button type="button" id="refreshBtn" class="btn btn-outline-primary">Reset</button>
+	</div>
+	<div id="updatedPopupId" style="display: none; color: forestgreen;">
+		<h1>&#10004; Updated successfully! </h1>
+	</div>
+	<div id="serverErrorId" style="display: none; color: forestgreen;">
+		<h1> Internal Server Error Try Again! </h1>
+	</div>
+</body>
+<script type="module" src="/pages/static/js/update_user_detail.js"></script>
+
+</html>
